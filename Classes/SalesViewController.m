@@ -41,7 +41,7 @@
 {
 	self = [super initWithAccount:anAccount];
 	if (self) {
-        [self setEdgesForExtendedLayout:UIExtendedEdgeNone];
+        [self setEdgesForExtendedLayout:UIRectEdgeNone];
 //        self.extendedLayoutIncludesOpaqueBars = YES;
 		self.title = ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) ? NSLocalizedString(@"Sales", nil) : [account displayName];
 		self.tabBarItem.image = [UIImage imageNamed:@"Sales.png"];
